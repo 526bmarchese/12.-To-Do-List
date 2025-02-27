@@ -57,3 +57,14 @@ function removeTask (index){
     displayTasks()
     
 }
+
+// Event Listener for the "Clear ALL Tasks" Button
+document.getElementById('ClearTaskBtn').addEventListener('click', function () {
+
+// Empty the tasks array to remove all tasks
+    tasks = []
+
+// Call the function to update the task list display
+    displayTasks();
+    
+})
